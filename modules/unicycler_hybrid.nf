@@ -21,7 +21,7 @@ process unicycler_hybrid {
 	"""
 	mkdir -p $sample
 	
-	unicycler -1 $fastq_1 -2 $fastq_2 -l $fastq_ont -o $sample --keep 0 --kmers 71
+	unicycler -1 $fastq_1 -2 $fastq_2 -l $fastq_ont -o $sample --keep 0
 	
 	mv ${sample}/assembly.fasta ${sample}/${sample}.fasta
 	mv ${sample}/assembly.gfa ${sample}/${sample}.gfa
